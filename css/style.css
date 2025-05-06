@@ -1,20 +1,14 @@
 /* ===================== VARIABLES GLOBALES ===================== */
 :root {
     /* Colores principales */
-    --color-primario: #660000;
-    /* rojo oscuro base */
-    --color-secundario: #880000;
-    /* rojo un poco más brillante */
-    --color-oscuro: #450000;
-    /* rojo más profundo para contrastes */
-    --color-fondo: #000000;
-    /* negro puro */
-    --color-fondo-claro: #111111;
-    /* negro atenuado para secciones */
-    --color-texto-principal: #ffffff;
-    /* blanco puro */
-    --color-texto-secundario: #cccccc;
-    /* gris claro para textos secundarios */
+    --color-primario: #660000; /* rojo oscuro base */
+    --color-secundario: #880000; /* rojo un poco más brillante */
+    --color-oscuro: #450000; /* rojo más profundo para contrastes */
+    --color-fondo: #000000; /* negro puro */
+    --color-fondo-claro: #111111; /* negro atenuado para secciones */
+    --color-texto-principal: #ffffff; /* blanco puro */
+    --color-texto-secundario: #cccccc; /* gris claro para textos secundarios */
+
     /* Varios */
     --color-boton-fondo: #ffffff;
     --color-boton-texto: var(--color-primario);
@@ -31,7 +25,6 @@
     --color-menu-activo-texto: #ffffff;
     --sombra-suave: 0px 2px 8px rgba(0, 0, 0, 0.6);
     --fondo-gradiente: radial-gradient(circle, var(--color-primario) 0%, var(--color-oscuro) 50%);
-
 }
 
 /* ===================== RESET ===================== */
@@ -47,7 +40,6 @@ body {
     background-color: var(--color-fondo);
     color: var(--color-texto-principal);
 }
-
 
 /* ===================== HEADER ===================== */
 header {
@@ -252,13 +244,9 @@ header {
 /* ===================== AYUDA EMPRESA ===================== */
 .ayuda-empresa {
     display: flex;
-    /* activa flexbox */
     flex-direction: column;
-    /* organiza en columna */
     justify-content: center;
-    /* centra verticalmente */
     align-items: center;
-    /* centra horizontalmente */
     padding: 64px 32px;
 }
 
@@ -279,11 +267,8 @@ header {
     border-radius: 20px;
     max-width: 1200px;
     width: 100%;
-    /* para que margin auto funcione respetando max-width */
     margin: 32px auto;
-    /* centrado horizontal */
 }
-
 
 .imagen-ayuda img {
     background: var(--fondo-gradiente);
@@ -341,13 +326,9 @@ header {
 /* ===================== SOBRE MI ===================== */
 .sobre-mi {
     display: flex;
-    /* activa flexbox */
     flex-direction: column;
-    /* organiza en columna */
     justify-content: center;
-    /* centra verticalmente */
     align-items: center;
-    /* centra horizontalmente */
     padding: 64px 32px;
     background: var(--fondo-gradiente);
 }
@@ -360,12 +341,9 @@ header {
 }
 
 .imagen-sobre-mi {
-    /* Desktop: fija el ancho y colócala a la derecha */
     flex: 0 0 400px;
-    /* ocupa 400px de ancho */
     max-width: 400px;
     order: 2;
-    /* en el row, aparece después del texto */
 }
 
 .imagen-sobre-mi img {
@@ -376,8 +354,6 @@ header {
     background-color: var(--color-fondo-claro);
 }
 
-
-/* Contenedor con texto e imagen */
 .contenedor-sobre-mi {
     padding: 32px;
     border-radius: 20px;
@@ -391,7 +367,6 @@ header {
     justify-content: center;
 }
 
-/* Bloque de texto */
 .contenido-texto {
     flex: 1;
     max-width: 700px;
@@ -438,28 +413,11 @@ header {
     font-weight: 600;
 }
 
-/* Imagen */
-.imagen-sobre-mi {
-    flex: 0 0 400px;
-    /* fija ancho del bloque imagen */
-    max-width: 400px;
-    width: 100%;
-}
-
-.imagen-sobre-mi img {
-    display: block;
-    width: 100%;
-    border-radius: 20px;
-    object-fit: cover;
-    background: var(--fondo-gradiente);
-}
-
 /* ===================== FOOTER ===================== */
 .footer {
     background-color: var(--color-fondo-claro);
     color: var(--color-oscuro);
     padding: 48px 32px 16px;
-    /* top, sides, bottom */
     font-size: 14px;
 }
 
@@ -523,7 +481,6 @@ header {
     color: var(--color-texto-secundario);
 }
 
-
 /* ===================== RESPONSIVE ===================== */
 @media (max-width: 768px) {
     .hero {
@@ -534,9 +491,7 @@ header {
     .hero-img img {
         margin-top: 10px;
     }
-}
 
-@media (max-width: 600px) {
     header {
         flex-direction: column;
         align-items: center;
@@ -561,9 +516,57 @@ header {
         width: 100%;
         flex-wrap: wrap;
     }
+
+    .footer-contenido {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-seccion {
+        flex: 1 1 auto;
+    }
+
+    .footer-social a {
+        margin: 0px 8px;
+    }
 }
 
-/* ===================== RESPONSIVE ADICIONAL ===================== */
+@media (max-width: 600px) {
+    .btn-empezar,
+    .btn-ayuda {
+        width: 100%;
+        text-align: center;
+    }
+
+    .beneficio {
+        padding: 24px;
+    }
+
+    .beneficio p {
+        font-size: 14px;
+    }
+
+    .imagen-ayuda img,
+    .imagen-sobre-mi img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .contenido-texto {
+        margin: 0px;
+        padding: 16px;
+    }
+
+    .icono-check {
+        width: 36px;
+    }
+
+    .logros li {
+        font-size: 15px;
+    }
+}
+
 @media (min-width: 769px) and (max-width: 1024px) {
     .hero {
         padding: 32px 64px;
@@ -590,57 +593,5 @@ header {
 @media (max-width: 480px) {
     .hero-contenido h1 {
         font-size: 24px;
-    }
-
-    .btn-empezar,
-    .btn-ayuda {
-        width: 100%;
-        text-align: center;
-    }
-
-    .beneficio {
-        padding: 24px;
-    }
-
-    .beneficio p {
-        font-size: 14px;
-    }
-
-    .imagen-ayuda img,
-    .imagen-sobre-mi img {
-        max-width: 100%;
-        height: auto;
-    }
-
-
-
-    .contenido-texto {
-        margin: 0px;
-        padding: 16px;
-    }
-
-    .icono-check {
-        width: 36px;
-    }
-
-    .logros li {
-        font-size: 15px;
-    }
-}
-
-/* ===================== FOOTER RESPONSIVE ===================== */
-@media (max-width: 768px) {
-    .footer-contenido {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-seccion {
-        flex: 1 1 auto;
-    }
-
-    .footer-social a {
-        margin: 0px 8px;
     }
 }
