@@ -1,0 +1,44 @@
+/* ===================== HEADER ===================== */
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    box-shadow: 0px 4px 8px var(--header-shadow);
+    background-color: var(--bg-card);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-logo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: var(--color-primary);
+    border: 2px solid var(--border);
+}
+
+.header-menu {
+    display: flex;
+    gap: 35px;
+    /* Espacio entre los elementos del menú */
+    flex-wrap: wrap;
+}
+
+
+.header-menu a {
+    padding: 10px 20px;
+    border-radius: 100px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.header-menu a:hover {
+    background-color: var(--menu-hover-bg);
+}
+
+.header-menu .activo {
+    background-color: var(--menu-active-bg);
+    color: var(--text-primary);
+}

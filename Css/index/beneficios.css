@@ -1,0 +1,79 @@
+.benefits-section {
+    text-align: center;
+    padding: 70px 40px;
+}
+
+.benefits-section h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: var(--text-primary);
+}
+
+.benefits-highlight {
+    color: var(--text-primary);
+    text-decoration: underline;
+    text-decoration-color: var(--color-accent);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+}
+
+.benefit-item {
+    background-color: var(--bg-card);
+    color: var(--text-inverse);
+    padding: 32px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-strong);
+    transition: transform 0.3s ease, box-shadow 0.3s ease,
+        background-color 0.5s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.8);
+    background-color: var(--btn-hover-bg);
+    cursor: default;
+}
+
+.benefit-icon {
+    background-color: var(--bg-light);
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.benefit-icon img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+}
+
+.benefit-text-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-align: left;
+}
+
+.benefit-item h3 {
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.benefit-item p {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--text-muted);
+}
