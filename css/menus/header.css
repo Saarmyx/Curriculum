@@ -11,7 +11,7 @@
     z-index: 1000;
 }
 
-.header-logo img{
+.header-logo img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -41,4 +41,62 @@
 .header-menu .activo {
     background-color: var(--menu-active-bg);
     color: var(--text-primary);
+}
+
+/* Responsive: ajustes para pantallas medianas */
+@media (max-width: 1024px) {
+    .header-section {
+        padding: 12px 24px;
+        /* Reduce el padding general */
+    }
+
+    .header-logo img {
+        width: 60px;
+        /* Reduce el tamaño del logo */
+        height: 60px;
+    }
+
+    .header-menu {
+        gap: 20px;
+        /* Reduce el espacio entre los elementos del menú */
+    }
+
+    .header-menu a {
+        padding: 8px 16px;
+        /* Ajusta el tamaño de los enlaces */
+        font-size: 14px;
+        /* Reduce el tamaño del texto */
+    }
+}
+
+/* Responsive: ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .header-section {
+        flex-direction: row;
+        /* Mantén los elementos en una fila */
+        justify-content: center;
+        /* Centra el menú horizontalmente */
+        align-items: center;
+        padding: 16px;
+        /* Ajusta el padding */
+    }
+
+    .header-logo {
+        display: none;
+        /* Oculta el logo en pantallas pequeñas */
+    }
+
+    .header-menu {
+        flex-direction: row;
+        /* Mantén los enlaces en una fila */
+        gap: 16px;
+        /* Ajusta el espacio entre los enlaces */
+    }
+
+    .header-menu a {
+        padding: 8px 16px;
+        /* Ajusta el tamaño de los enlaces */
+        font-size: 12px;
+        /* Reduce el tamaño del texto */
+    }
 }

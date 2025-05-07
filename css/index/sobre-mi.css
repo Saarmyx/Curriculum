@@ -94,14 +94,70 @@
 }
 
 /* Responsive: apila en móviles */
+@media (max-width: 1024px) {
+    .about-container {
+        gap: 24px;
+        /* Reduce el espacio entre los elementos */
+        padding: 32px;
+        /* Ajusta el padding para pantallas medianas */
+    }
+
+    .about-text {
+        padding: 24px;
+        /* Reduce el padding interno */
+    }
+
+    .about-text h3 {
+        font-size: 22px;
+        /* Ajusta el tamaño del encabezado */
+    }
+
+    .about-text p {
+        font-size: 15px;
+        /* Reduce el tamaño del texto */
+    }
+
+    .about-image img {
+        max-width: 250px;
+        /* Ajusta el tamaño máximo de la imagen */
+    }
+}
+
 @media (max-width: 768px) {
     .about-container {
         flex-direction: column;
+        /* Apila los elementos en una columna */
         align-items: center;
+        /* Centra los elementos */
+        gap: 16px;
+        /* Reduce aún más el espacio entre los elementos */
+        padding: 24px;
+        /* Reduce el padding general */
+    }
+
+    .about-text {
+        width: 100%;
+        /* Ocupa todo el ancho disponible */
+        padding: 20px;
+        /* Reduce el padding interno */
+    }
+
+    .about-text h3 {
+        font-size: 20px;
+        /* Ajusta el tamaño del encabezado */
+    }
+
+    .about-text p {
+        font-size: 14px;
+        /* Reduce el tamaño del texto */
     }
 
     .about-image img {
         width: 100%;
+        /* Asegura que la imagen ocupe todo el ancho disponible */
+        max-width: 300px;
+        /* Limita el tamaño máximo */
         height: auto;
+        /* Mantiene la proporción de la imagen */
     }
 }

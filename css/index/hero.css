@@ -11,7 +11,7 @@
   max-width: 600px;
 }
 
-.hero-content .name-p{
+.hero-content .name-p {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--text-muted);
@@ -20,7 +20,7 @@
   font-size: 14px;
 }
 
-.hero-content .description{
+.hero-content .description {
   font-size: 35px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -56,7 +56,68 @@
   transition: background-color 0.3s ease;
 }
 
-.hero-btn-start:hover{
+.hero-btn-start:hover {
   background-color: var(--btn-hover-bg);
   color: var(--btn-hover-text);
+}
+
+/* Responsive: ajustes para pantallas medianas */
+@media (max-width: 1024px) {
+  .hero-section {
+    padding: 50px;
+    /* Reduce el padding general */
+    flex-direction: column;
+    /* Apila los elementos verticalmente */
+    gap: 32px;
+    /* Agrega espacio entre los elementos */
+  }
+
+  .hero-content {
+    max-width: 100%;
+    /* Permite que el contenido ocupe todo el ancho */
+  }
+
+  .hero-content .description {
+    font-size: 28px;
+    /* Reduce el tamaño del texto */
+  }
+
+  .hero-image img {
+    max-width: 250px;
+    /* Ajusta el tamaño máximo de la imagen */
+  }
+}
+
+/* Responsive: ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 30px;
+    /* Reduce aún más el padding */
+    gap: 24px;
+    /* Reduce el espacio entre los elementos */
+  }
+
+  .hero-content .name-p {
+    font-size: 12px;
+    /* Reduce el tamaño del subtítulo */
+  }
+
+  .hero-content .description {
+    font-size: 24px;
+    /* Reduce el tamaño del texto principal */
+    line-height: 1.3;
+    /* Ajusta el interlineado */
+  }
+
+  .hero-btn-start {
+    padding: 8px 16px;
+    /* Ajusta el tamaño del botón */
+    font-size: 14px;
+    /* Reduce el tamaño del texto del botón */
+  }
+
+  .hero-image img {
+    max-width: 200px;
+    /* Reduce el tamaño máximo de la imagen */
+  }
 }
