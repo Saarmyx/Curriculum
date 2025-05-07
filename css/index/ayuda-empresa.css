@@ -1,0 +1,122 @@
+/* ===================== VARIABLES GLOBALES ===================== */
+:root {
+    /* ——— Paleta de Colores ——— */
+    --color-primary: #660000;
+    /* Rojo profundo (enfasis/principal) */
+    --color-accent: #c1121f;
+    /* Rojo vivo secundario */
+    --color-cream: #fdf0d5;
+    /* Crema claro */
+    --color-cream-o: #efdecd;
+    /* Crema oscuro */
+    --color-dark: #1a1a1a;
+    /* Gris oscuro */
+
+    /* ——— Fondos ——— */
+    --bg-base: var(--color-dark);
+    /* Fondo principal en modo oscuro */
+    --bg-section: #151515;
+    /* Secciones oscuras complementarias */
+    --bg-card: #222222;
+    /* Tarjetas y bloques */
+    --bg-light: var(--color-cream);
+    /* Fondo claro para contraste */
+    --bg-muted: rgba(255, 255, 255, 0.05);
+    /* Sutil overlay */
+
+    /* ——— Textos ——— */
+    --text-primary: var(--color-cream);
+    /* Texto normal claro */
+    --text-inverse: var(--color-cream-o);
+    /* Texto oscuro sobre fondos claros */
+    --text-muted: var(--color-cream-o);
+    /* Texto secundario */
+
+    /* ——— Botones ——— */
+    --btn-bg: var(--color-cream);
+    --btn-text: var(--color-accent);
+    --btn-hover-bg: var(--color-accent);
+    --btn-hover-text: var(--color-cream);
+
+    /* ——— Bordes y sombras ——— */
+    --border: var(--color-primary);
+    --shadow-soft: 0px 2px 8px rgba(0, 0, 0, 0.7);
+    --shadow-strong: 0px 8px 16px rgba(0, 0, 0, 0.8);
+
+    /* ——— Header & Menú ——— */
+    --header-bg: var(--bg-section);
+    --header-shadow: rgba(0, 0, 0, 0.9);
+    --menu-hover-bg: var(--color-accent);
+    --menu-active-bg: var(--color-primary);
+
+    /* ——— Gradientes ——— */
+    --gradient-primary: linear-gradient(135deg,
+            var(--color-primary) 10%,
+            var(--color-accent) 100%);
+}
+
+
+/* ===================== AYUDA EMPRESA ===================== */
+.help-business-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 32px;
+}
+
+.help-business-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-align: center;
+}
+
+.help-business-container {
+    background-color: var(--bg-card);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding: 64px 32px;
+    border-radius: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 32px auto;
+    box-shadow: var(--shadow-soft);
+}
+
+.help-business-image img {
+    background: var(--gradient-primary);
+    max-width: 400px;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.help-business-text {
+    max-width: 600px;
+    color: var(--text-primary);
+}
+
+.help-business-text h2,
+.help-business-text h3 {
+    margin-bottom: 16px;
+    color: var(--text-primary);
+}
+
+.help-business-text h2 {
+    font-size: 28px;
+}
+
+.help-business-text h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.help-business-text p {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+}

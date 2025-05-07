@@ -1,0 +1,137 @@
+/* ===================== VARIABLES GLOBALES ===================== */
+:root {
+    /* ——— Paleta de Colores ——— */
+    --color-primary: #660000;
+    /* Rojo profundo (enfasis/principal) */
+    --color-accent: #c1121f;
+    /* Rojo vivo secundario */
+    --color-cream: #fdf0d5;
+    /* Crema claro */
+    --color-cream-o: #efdecd;
+    /* Crema oscuro */
+    --color-dark: #1a1a1a;
+    /* Gris oscuro */
+
+    /* ——— Fondos ——— */
+    --bg-base: var(--color-dark);
+    /* Fondo principal en modo oscuro */
+    --bg-section: #151515;
+    /* Secciones oscuras complementarias */
+    --bg-card: #222222;
+    /* Tarjetas y bloques */
+    --bg-light: var(--color-cream);
+    /* Fondo claro para contraste */
+    --bg-muted: rgba(255, 255, 255, 0.05);
+    /* Sutil overlay */
+
+    /* ——— Textos ——— */
+    --text-primary: var(--color-cream);
+    /* Texto normal claro */
+    --text-inverse: var(--color-cream-o);
+    /* Texto oscuro sobre fondos claros */
+    --text-muted: var(--color-cream-o);
+    /* Texto secundario */
+
+    /* ——— Botones ——— */
+    --btn-bg: var(--color-cream);
+    --btn-text: var(--color-accent);
+    --btn-hover-bg: var(--color-accent);
+    --btn-hover-text: var(--color-cream);
+
+    /* ——— Bordes y sombras ——— */
+    --border: var(--color-primary);
+    --shadow-soft: 0px 2px 8px rgba(0, 0, 0, 0.7);
+    --shadow-strong: 0px 8px 16px rgba(0, 0, 0, 0.8);
+
+    /* ——— Header & Menú ——— */
+    --header-bg: var(--bg-section);
+    --header-shadow: rgba(0, 0, 0, 0.9);
+    --menu-hover-bg: var(--color-accent);
+    --menu-active-bg: var(--color-primary);
+
+    /* ——— Gradientes ——— */
+    --gradient-primary: linear-gradient(135deg,
+            var(--color-primary) 10%,
+            var(--color-accent) 100%);
+}
+
+/* ===================== BENEFICIOS ===================== */
+.benefits-section {
+    text-align: center;
+    padding: 64px 32px;
+}
+
+.benefits-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: var(--text-primary);
+}
+
+.benefits-highlight {
+    color: var(--text-primary);
+    text-decoration: underline;
+    text-decoration-color: var(--color-accent);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+}
+
+.benefit-item {
+    background-color: var(--bg-card);
+    color: var(--text-inverse);
+    padding: 32px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-strong);
+    transition: transform 0.3s ease, box-shadow 0.3s ease,
+        background-color 0.5s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.8);
+    background-color: var(--btn-hover-bg);
+    cursor: default;
+}
+
+.benefit-icon {
+    background-color: var(--bg-light);
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.benefit-icon img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+}
+
+.benefit-text-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-align: left;
+}
+
+.benefit-item h3 {
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.benefit-item p {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--text-muted);
+}
