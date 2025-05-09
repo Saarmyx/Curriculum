@@ -63,10 +63,11 @@
 
     .header-menu a {
         padding: 8px 16px;
-        /* Ajusta el tamaño de los enlaces */
-        font-size: 14px;
+        /* Reduce el tamaño de los enlaces */
+        font-size: 15px;
         /* Reduce el tamaño del texto */
     }
+
 }
 
 /* Responsive: ajustes para pantallas pequeñas */
@@ -96,7 +97,5 @@
     .header-menu a {
         padding: 8px 16px;
         /* Ajusta el tamaño de los enlaces */
-        font-size: 12px;
-        /* Reduce el tamaño del texto */
     }
 }

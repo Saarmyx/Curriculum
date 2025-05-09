@@ -67,12 +67,13 @@
 body {
   font-family: sans-serif;
   line-height: 1.6;
-  background-color: var(--color-dark);
+  background: var(--gradient-primary);
   color: var(--text-primary);
 }
 
 .container-general {
-  max-width: 1920px;
+  background-color: var(--color-dark);
+  max-width: 1366px;
   margin: 0 auto;
 }
 

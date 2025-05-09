@@ -1,14 +1,15 @@
 .hero-section {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 70px;
   background: var(--gradient-primary);
+  min-height: 90vh;
 }
 
 .hero-content {
-  max-width: 600px;
+  max-width: 500px;
+  text-align: justify;
 }
 
 .hero-content .name-p {
@@ -35,9 +36,16 @@
   border-radius: 4px;
 }
 
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+}
 
 .hero-image img {
-  max-width: 300px;
+  max-width: 350px;
   height: auto;
   border-radius: 10px;
 }
@@ -53,7 +61,7 @@
   border-radius: 999px;
   font-weight: bold;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.5s ease;
 }
 
 .hero-btn-start:hover {
@@ -72,18 +80,13 @@
     /* Agrega espacio entre los elementos */
   }
 
-  .hero-content {
-    max-width: 100%;
-    /* Permite que el contenido ocupe todo el ancho */
-  }
-
   .hero-content .description {
     font-size: 28px;
     /* Reduce el tamaño del texto */
   }
 
   .hero-image img {
-    max-width: 250px;
+    width: 350px;
     /* Ajusta el tamaño máximo de la imagen */
   }
 }
@@ -116,8 +119,4 @@
     /* Reduce el tamaño del texto del botón */
   }
 
-  .hero-image img {
-    max-width: 200px;
-    /* Reduce el tamaño máximo de la imagen */
-  }
 }

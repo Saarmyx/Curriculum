@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/css/menus/header.css">
     <link rel="stylesheet" href="/css/index/hero.css">
     <link rel="stylesheet" href="/css/index/beneficios.css">
-    <link rel="stylesheet" href="/css/index/ayuda-empresa.css">
+    <link rel="stylesheet" href="/css/index/proyectos.css">
     <link rel="stylesheet" href="/css/index/sobre-mi.css">
     <link rel="stylesheet" href="/css/menus/footer.css">
 </head>
@@ -26,12 +26,12 @@
         <!-- HEADER -->
         <header class="header-section">
             <div class="header-logo">
-                <a href=""><img src="/img/Saarmyx_Edition_SXR_Red_SFondo.png" alt=""></a>
+                <a href="/secciones/perfil.html"><img src="/img/Saarmyx_Edition_SXR_Red_SFondo.png" alt=""></a>
             </div>
             <nav class="header-menu">
-                <a href="" class="activo">Inicio</a>
-                <a href="">Sobre mí</a>
-                <a href="">Experiencia</a>
+                <a href="/index.html" class="activo">Inicio</a>
+                <a href="/secciones/proyectos.html">Proyectos</a>
+                <a href="/secciones/experiencia.html">Experiencia</a>
             </nav>
         </header>
 
@@ -40,40 +40,30 @@
             <div class="hero-content">
                 <div class="hero-tex">
                     <h2 class="name-p">Soy Santiago Sarmiento</h2>
-                    <h1 class="description">Me dedico a aprender una de las habilidades más poderosas del futuro:
+                    <h1 class="description">Me enfoco en una de las habilidades más poderosas del futuro:
                         <span class="hero-highlight">La programación</span>
                     </h1>
-                    <a href="/secciones/sobre-mi.html" class="hero-btn-start">Conoce más</a>
+                    <a href="/secciones/perfil.html" class="hero-btn-start">Conoce más</a>
                 </div>
-                <div class="hero-image">
-                    <img src="/img/ft.jpg" alt="">
+            </div>
+            <div class="hero-image">
+                <img src="/img/ft.jpg" alt="">
 
-                </div>
             </div>
         </section>
 
         <!-- BENEFICIOS -->
         <section class="benefits-section">
-            <h2>Un enfoque profesional que transforma <span class="benefits-highlight">las áreas clave de cualquier
+            <h2>Transformo <span class="benefits-highlight">las áreas clave de cualquier
                     proyecto</span></h2>
 
             <div class="benefits-grid">
 
-                <div class="benefit-item">
-                    <div class="benefit-text-container">
-                        <div class="benefit-icon">
-                            <img src="/img/python.png" alt="Python">
-                        </div>
-                        <h3>Python & Dongo</h3>
-                    </div>
-                    <p>Desarrollo backend con Python y Dongo.
-                        Creando APIs, juegos en 2d y aplicaciones escalables.</p>
-                </div>
 
                 <div class="benefit-item">
                     <div class="benefit-text-container">
                         <div class="benefit-icon">
-                            <img src="/img/web-design.png" alt="Front-end-Web">
+                            <img src="/img/icons/web-design.png" alt="Front-end-Web">
                         </div>
                         <h3>Front-end Web</h3>
                     </div>
@@ -83,7 +73,7 @@
                 <div class="benefit-item">
                     <div class="benefit-text-container">
                         <div class="benefit-icon">
-                            <img src="/img/paint-palette.png" alt="Diseño-Gráfico">
+                            <img src="/img//icons/paint-palette.png" alt="Diseño-Gráfico">
                         </div>
                         <h3>Diseño Gráfico</h3>
                     </div>
@@ -93,7 +83,19 @@
                 <div class="benefit-item">
                     <div class="benefit-text-container">
                         <div class="benefit-icon">
-                            <img src="/img/github.png" alt="Control de versiones">
+                            <img src="/img/icons/python.png" alt="Python">
+                        </div>
+                        <h3>Python & Dongo</h3>
+                    </div>
+                    <p>Desarrollo backend con Python y Dongo.
+                        Creando APIs, juegos en 2d y aplicaciones escalables.</p>
+                </div>
+
+
+                <div class="benefit-item">
+                    <div class="benefit-text-container">
+                        <div class="benefit-icon">
+                            <img src="/img//icons/github.png" alt="Control de versiones">
                         </div>
                         <h3>Control de Versiones</h3>
                     </div>
@@ -101,104 +103,54 @@
                 </div>
 
             </div>
+
+            <a href="/secciones/perfil.html" class="benefits-btn-start">Conoce más</a>
         </section>
 
-        <!-- AYUDA EMPRESA -->
-        <section class="help-business-section">
-            <h1>¿Cómo te puedo ayudar?</h1>
 
-            <!-- Soluciones a tu medida -->
-            <div class="help-business-container">
-                <div class="help-business-image">
-                    <img src="/img/Saarmyx_Edition_SXR_Red_SFondo.png" alt="Apoyo empresarial" />
+        <!-- PROYECTOS -->
+        <section class="proyects-section">
+            <h2>Proyectos <span class="proyects-highlight"> Destacados</span></h2>
+
+            <div>
+                <div class="proyects-grid">
+                    <div class="proyect-item">
+                        <a href=""> <img src="/img/web-proyect.png" alt="Proyecto 1">
+                        </a>
+                        <h3>Proyecto 1</h3>
+                        <div class="tecnologies-used">
+                            <a href="">HTML</a>
+                            <a href="">CSS</a>
+                        </div>
+
+
+                        <p>Descripción breve del proyecto 1.</p>
+                    </div>
+
+                    <div class="proyect-item">
+                        <img src="/img/web-proyect.png" alt="Proyecto 2">
+                        <h3>Proyecto 2</h3>
+                        <div class="tecnologies-used">
+                            <a href="">HTML</a>
+                            <a href="">CSS</a>
+                        </div>
+                        <p>Descripción breve del proyecto 2.</p>
+
+                    </div>
+
+                    <div class="proyect-item">
+                        <img src="/img/web-proyect.png" alt="Proyecto 3">
+                        <h3>Proyecto 3</h3>
+                        <div class="tecnologies-used">
+                            <a href="">HTML</a>
+                            <a href="">CSS</a>
+                        </div>
+                        <p>Descripción breve del proyecto 3.</p>
+                    </div>
                 </div>
-                <div class="help-business-text">
 
-                    <h3>Soluciones a tu medida</h3>
-                    <p>Adapto cada proyecto a tus necesidades específicas, combinando mis conocimientos en
-                        <strong>Python, JavaScript y
-                            diseño gráfico </strong> para ofrecer una propuesta integral y eficiente.
-                    </p>
-                    <p>Desde la arquitectura inicial hasta la implementación final, mi enfoque se centra en
-                        <strong>maximizar la
-                            escalabilidad, reducir tiempos de entrega y garantizar </strong> un mantenimiento sencillo
-                        de tu plataforma.
-                    </p>
+                <a href="/secciones/proyectos.html" class="proyects-btn-start">Conoce más</a>
 
-                    <a href="/secciones/contacto.html" class="help-business-btn">Trabajemos juntos</a>
-                </div>
-            </div>
-
-            <!-- Automatizacion inteligente -->
-            <div class="help-business-container">
-                <div class="help-business-image">
-                    <img src="/img/Saarmyx-desktop.png" alt="Apoyo empresarial" />
-                </div>
-                <div class="help-business-text">
-
-                    <h3>Automatización inteligente</h3>
-                    <p>Optimizo flujos de trabajo mediante scripts personalizados y automatización de procesos usando
-                        herramientas como <strong>Python</strong> y <strong>Bash</strong>, lo que permite a mis clientes
-                        ahorrar tiempo y minimizar errores humanos.</p>
-                    <p>Desde tareas repetitivas hasta integraciones complejas entre plataformas, busco siempre entregar
-                        <strong> soluciones sostenibles, seguras y fácilmente escalables </strong> para entornos
-                        exigentes.
-                    </p>
-
-                    <a href="/secciones/contacto.html" class="help-business-btn">Optimiza tu flujo</a>
-                </div>
-            </div>
-
-            <!-- Interfaces que comunican -->
-            <div class="help-business-container">
-                <div class="help-business-image">
-                    <img src="/img/Saarmyx-UI.png" alt="Apoyo empresarial" />
-                </div>
-                <div class="help-business-text">
-
-                    <h3>Interfaces que comunican</h3>
-                    <p><strong>Diseño y desarrollo interfaces centradas en el usuario</strong>, combinando
-                        <strong>HTML</strong>, <strong>CSS</strong> y <strong>JAVASCRIPT</strong> para lograr
-                        experiencias digitales intuitivas, accesibles y visualmente coherentes con la identidad de cada
-                        proyecto.
-                    </p>
-                    <p> Mi objetivo es que cada interfaz no solo luzca bien, sino que también responda rápido, sea fácil
-                        de
-                        usar y esté alineada con los objetivos del producto.
-                    </p>
-
-
-
-
-
-                    <a href="/secciones/contacto.html" class="help-business-btn">Diseñemos tu experiencia</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- SOBRE MI -->
-        <section class="about-me-section">
-            <h1 class="about-me-title">Soy Santiago Sarmiento, Desarrollador Full-Stack</h1>
-
-            <div class="about-container">
-                <div class="about-text">
-                    <h3>Sobre mí</h3>
-                    <hr />
-                    <p>Durante los últimos años he desarrollado soluciones tecnológicas personalizadas que generaron
-                        resultados tangibles para diversas industrias.</p>
-                    <ul>
-                        <li>He liderado el desarrollo de plataformas escalables utilizadas por más de 1 millón de
-                            usuarios.</li>
-                        <li>He optimizado sistemas, reduciendo costos operativos hasta un 40% mediante automatización.
-                        </li>
-                        <li>Me he especializado en backend, arquitectura de software y DevOps dentro del área de
-                            ingeniería.</li>
-                    </ul>
-                </div>
-                <div class="about-image">
-                    <img src="/img/rubio.jpg" alt="Foto personal" />
-                </div>
-            </div>
         </section>
 
 
@@ -231,9 +183,9 @@
                     <h4>Enlaces</h4>
                     <ul>
                         <li><a href="/index.html">Inicio</a></li>
-                        <li><a href="/secciones/sobre-mi.html">Sobre mí</a></li>
+                        <li><a href="/secciones/perfil.html">Sobre mí</a></li>
+                        <li><a href="/secciones/proyectos.html">Proyectos</a></li>
                         <li><a href="/secciones/experiencia.html">Experiencia</a></li>
-                        <li><a href="/secciones/contacto.html">Contacto</a></li>
                     </ul>
                 </nav>
 
