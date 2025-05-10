@@ -71,7 +71,7 @@ body {
 
 .container-general {
   background-color: var(--bg-base);
-  max-width: 1366px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 

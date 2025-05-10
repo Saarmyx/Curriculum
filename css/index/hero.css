@@ -72,10 +72,8 @@
 /* Responsive: ajustes para pantallas medianas */
 @media (max-width: 1024px) {
   .hero-section {
-    padding: 50px;
+    padding: 80px;
     /* Reduce el padding general */
-    flex-direction: column;
-    /* Apila los elementos verticalmente */
     gap: 32px;
     /* Agrega espacio entre los elementos */
   }
@@ -94,10 +92,7 @@
 /* Responsive: ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
   .hero-section {
-    padding: 30px;
-    /* Reduce aún más el padding */
-    gap: 24px;
-    /* Reduce el espacio entre los elementos */
+    flex-direction: column;
   }
 
   .hero-content .name-p {
@@ -119,4 +114,21 @@
     /* Reduce el tamaño del texto del botón */
   }
 
+}
+
+@media (max-width: 375px){
+  .hero-section {
+    padding: 40px 20px;
+    /* Reduce el padding general */
+  }
+
+  .hero-content .description {
+    font-size: 20px;
+    /* Reduce el tamaño del texto */
+  }
+
+  .hero-image img {
+    width: 300px;
+    /* Ajusta el tamaño máximo de la imagen */
+  }
 }

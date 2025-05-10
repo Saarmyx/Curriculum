@@ -107,6 +107,11 @@
         padding: 50px 20px;
     }
 
+    .benefits-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 24px;
+    }
+
     .benefits-section h2 {
         font-size: 30px;
         margin-bottom: 30px;
@@ -123,7 +128,6 @@
     .benefits-section {
         padding: 30px 20px;
     }
-
     .benefits-section h2 {
         font-size: 28px;
         margin-bottom: 20px;

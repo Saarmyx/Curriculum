@@ -1,0 +1,47 @@
+.error-section {
+    padding: 50px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+
+}
+
+.error-content {
+    max-width: 500px;
+    background-color: var(--bg-card);
+    color: var(--text-inverse);
+    padding: 32px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-strong);
+    transition: transform 0.3s ease, box-shadow 0.3s ease,
+        background-color 0.5s ease;
+}
+
+.error-content h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.error-btn {
+    background-color: var(--bg-card);
+    color: var(--text-inverse);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+    box-shadow: var(--shadow-strong);
+    transition: background-color 0.5s ease;
+
+}
+
+.error-btn:hover {
+    background-color: var(--btn-hover-bg);
+    color: var(--btn-hover-text);
+    cursor: pointer;
+}
