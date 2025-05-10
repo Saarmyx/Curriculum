@@ -1,6 +1,6 @@
 .footer-section {
     background-color: var(--bg-card);
-    color: var(--color-cream);
+    color: var(--text-primary);
     padding: 64px 32px 24px;
     font-size: 14px;
     font-family: "Segoe UI", Roboto, sans-serif;
@@ -13,7 +13,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 48px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding-bottom: 32px;
     max-width: 1200px;
     margin: 0 auto;
@@ -39,7 +38,7 @@
 }
 
 .footer-logo-section p {
-    color: var(--text-muted);
+    color: var(--text-inverse);
     font-size: 15px;
     margin: 0;
 }
@@ -124,7 +123,7 @@
     padding-top: 20px;
     font-size: 13px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    color: var(--text-muted);
+    color: var(--text-inverse);
 }
 
 .footer-bottom a {
@@ -138,33 +137,19 @@
 
 /* Responsive design */
 @media (max-width: 1024px) {
-    .footer-container {
-        padding: 24px 16px;
-        /* Reduce el padding para pantallas medianas */
-        gap: 32px;
-        /* Ajusta el espacio entre secciones */
+    .footer-section {
+        padding: 50px 20px;
+        /* Reduce el padding general */
     }
-}
 
-@media (max-width: 768px) {
     .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 24px;
+        gap: 32px;
         /* Reduce el espacio entre secciones */
     }
 
-    .footer-logo-section,
-    .footer-nav-section,
-    .footer-social-section {
-        align-items: center;
-        text-align: center;
-    }
-
     .footer-logo-section h3 {
-        font-size: 22px;
-        /* Ajusta el tamaño del texto para pantallas pequeñas */
+        font-size: 24px;
+        /* Ajusta el tamaño del texto para pantallas medianas */
     }
 
     .footer-logo-section p {
@@ -185,7 +170,6 @@
         margin-bottom: 8px;
         /* Reduce el espacio entre elementos de lista */
     }
-
     .footer-bottom {
         font-size: 12px;
         /* Ajusta el tamaño del texto del footer inferior */

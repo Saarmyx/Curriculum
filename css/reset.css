@@ -7,36 +7,36 @@
   /* Rojo vivo secundario */
   --color-cream: #fdf0d5;
   /* Crema claro */
-  --color-cream-o: #efdecd;
+  --color-cream-o: #e6d4c2;
   /* Crema oscuro */
-  --color-dark: #1a1a1a;
-  /* Gris oscuro */
 
   /* ——— Fondos ——— */
-  --bg-base: var(--color-dark);
+  --bg-base: #1a1a1a;
   /* Fondo principal en modo oscuro */
   --bg-section: #151515;
   /* Secciones oscuras complementarias */
   --bg-card: #222222;
   /* Tarjetas y bloques */
-  --bg-light: var(--color-cream);
-  /* Fondo claro para contraste */
   --bg-muted: rgba(255, 255, 255, 0.05);
   /* Sutil overlay */
+  --bg-light: #e7e7e7;
+  /* Fondo claro para elementos específicos */
 
   /* ——— Textos ——— */
   --text-primary: var(--color-cream);
   /* Texto normal claro */
   --text-inverse: var(--color-cream-o);
   /* Texto oscuro sobre fondos claros */
-  --text-muted: var(--color-cream-o);
-  /* Texto secundario */
+  --text-muted: #000000;
 
   /* ——— Botones ——— */
-  --btn-bg: var(--color-cream);
-  --btn-text: var(--color-accent);
+  --bg-btn-l: var(--color-cream);
+  --btn-text-l: var(--color-accent);
   --btn-hover-bg: var(--color-accent);
   --btn-hover-text: var(--color-cream);
+
+  --bg-btn-o: var(--bg-card );
+  --btn-text-o: var(--color-accent);
 
   /* ——— Bordes y sombras ——— */
   --border: var(--color-primary);
@@ -46,8 +46,6 @@
   /* ——— Header & Menú ——— */
   --header-bg: var(--bg-section);
   --header-shadow: rgba(0, 0, 0, 0.9);
-  --menu-hover-bg: var(--color-accent);
-  --menu-active-bg: var(--color-primary);
 
   /* ——— Gradientes ——— */
   --gradient-primary: linear-gradient(135deg,
@@ -72,7 +70,7 @@ body {
 }
 
 .container-general {
-  background-color: var(--color-dark);
+  background-color: var(--bg-base);
   max-width: 1366px;
   margin: 0 auto;
 }

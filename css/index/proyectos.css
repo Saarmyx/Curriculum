@@ -40,9 +40,10 @@
 }
 
 .proyect-item img {
-    background-color: var(--bg-light);
     border-radius: 20px;
-    width: auto;
+    width: 100%;
+    height: auto;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,11 +83,31 @@
    background-color: var(--color-primary);
 }
 
+.tecnologies-used .html{
+    background-color: #244b00;
+}
+
+.tecnologies-used .css{
+    background-color: #00274b;
+}
+
+.tecnologies-used .js{
+    background-color: #dbf300;
+    color: var(--text-muted);
+}
+
+.tecnologies-used .js:hover{
+    color: var(--text-primary);
+}
+
+.tecnologies-used .python{
+    background-color: #07004b;
+}
+
 .proyect-item p {
-    padding: 0 20px;
     font-size: 15px;
     line-height: 24px;
-    color: var(--text-muted);
+    color: var(--text-inverse);
 }
 
 /* ===================== BOTONES ===================== */

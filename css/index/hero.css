@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 70px;
+  padding: 70px 100px;
   background: var(--gradient-primary);
   min-height: 90vh;
 }
@@ -15,7 +15,7 @@
 .hero-content .name-p {
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--text-muted);
+  color: var(--text-inverse);
   margin-bottom: 16px;
   font-weight: bold;
   font-size: 14px;
@@ -54,8 +54,8 @@
 /* ===================== BOTONES ===================== */
 .hero-btn-start {
   display: inline-block;
-  background-color: var(--btn-bg);
-  color: var(--btn-text);
+  background-color: var(--bg-btn-l);
+  color: var(--btn-text-l);
   padding: 10px 20px;
   margin-bottom: 20px;
   border-radius: 999px;
