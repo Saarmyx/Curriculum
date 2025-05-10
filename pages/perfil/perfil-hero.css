@@ -1,7 +1,7 @@
 /* Hero Section */
 .perfil-hero {
     position: relative;
-    background: url("/img/Saarmyx-UI.png") center/cover no-repeat;
+    background: url("/assets/saarmyx/covers-saarmyx/Saarmyx-UI.png") center/cover no-repeat;
     height: 360px;
     display: flex;
     align-items: center;
