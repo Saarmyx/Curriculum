@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- TITULO Y IMG -->
-    <title>Santiago Sarmiento - Programador</title>
+    <title>Santiago | Programador</title>
     <link rel="icon" href="/assets/saarmyx/logos-saarmyx/Saarmyx_Edition_SXR_Red_SFondo.png" type="image/png" />
 
     <!-- CSS -->
@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/pages/index/hero.css">
     <link rel="stylesheet" href="/pages/index/beneficios.css">
     <link rel="stylesheet" href="/pages/index/proyectos.css">
+    <link rel="stylesheet" href="/pages/index/modal/modal.css">
     <link rel="stylesheet" href="/language/css/menus/footer.css">
 </head>
 
@@ -47,7 +48,7 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="/assets/saarmyx/logos-saarmyx/Saarmyx_420_2.0_SFondo.png" alt="">
+                <img src="/assets/saarmyx/logos-saarmyx/Saarmyx_Cabello_SFondo.png" alt="">
 
             </div>
         </section>
@@ -131,19 +132,51 @@
 
                     </div>
 
-                    <div class="proyect-item">
-                        <a href=""><img src="/assets/saarmyx/covers-saarmyx/Saarmyx-UI.png" alt="Proyecto 2">
-                        </a>
+                    <div class="proyect-item" onclick="openModal()">
+                        <img src="/assets/saarmyx/covers-saarmyx/Saarmyx-UI.png" alt="Proyecto 2">
                         <h3>Diseño de Personaje Propio</h3>
                         <div class="tecnologies-used">
-                            <a href="" class="illustrator">Illustrator</a>
+                            <a href="#" class="illustrator">Illustrator</a>
                         </div>
                         <p>Ilustración original de personaje digital creada con Adobe Illustrator, estilo caricatura
-                            moderna.
-                        </p>
-
-
+                            moderna.</p>
                     </div>
+
+                    <div id="modal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <h2>Detalles del Proyecto</h2>
+
+                            <!-- Galería de imágenes con descripciones -->
+                            <div class="gallery-item">
+                                <img src="/assets/saarmyx/logos-saarmyx/Boceto 1.png" alt="Boceto">
+                                <div class="description">
+                                    <h4>Boceto Inicial</h4>
+                                    <p>Dibujo base para el diseño del personaje.</p>
+                                </div>
+                            </div>
+
+                            <div class="gallery-item">
+                                <img src="/assets/saarmyx/logos-saarmyx/Boceto 2.png" alt="Lineart">
+                                <div class="description">
+                                    <h4>Lineart</h4>
+                                    <p>Limpieza de líneas para definir contorno.</p>
+                                </div>
+                            </div>
+
+                            <div class="gallery-item">
+                                <img src="/assets/saarmyx/logos-saarmyx/Saarmyx_Cabello_SFondo.png"
+                                    alt="Coloreado Final">
+                                <div class="description">
+                                    <h4>Coloreado Final</h4>
+                                    <p>Aplicación de colores y sombreado en estilo cartoon moderno.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
 
                     <div class="proyect-item">
                         <a href="https://apiwise.ai/"><img src="/assets/proyects/APIWise.png" alt="Proyecto 3">
@@ -231,6 +264,7 @@
     </div>
 
     <script src="/js/main.js"></script>
+    <script src="/pages/index/modal/modal.js"></script>
 </body>
 
 </html>
