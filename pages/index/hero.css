@@ -1,67 +1,62 @@
+/* ===================== HERO SECTION ===================== */
 .hero-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 70px 100px;
+  padding: 5rem 6.25rem;
   background: var(--gradient-primary);
   min-height: 90vh;
 }
 
 .hero-content {
-  max-width: 500px;
+  max-width: 600px;
   text-align: justify;
+  padding: 50px;
 }
 
 .hero-content .name-p {
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--text-inverse);
-  margin-bottom: 16px;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .hero-content .description {
-  font-size: 35px;
+  font-size: 2.2rem;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
   line-height: 1.4;
   color: var(--text-primary);
+  text-transform: capitalize;
 }
 
 .hero-highlight {
   background-color: var(--color-primary);
-  padding: 3px 6px;
+  padding: 4px 8px;
   color: var(--text-primary);
-  border-radius: 4px;
-}
-
-.hero-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 100%;
-  height: auto;
+  border-radius: 6px;
 }
 
 .hero-image img {
-  max-width: 350px;
+  max-width: 500px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
 }
-
 
 /* ===================== BOTONES ===================== */
 .hero-btn-start {
   display: inline-block;
-  background-color: var(--bg-btn-l);
-  color: var(--btn-text-l);
-  padding: 10px 20px;
-  margin-bottom: 20px;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  padding: 12px 24px;
   border-radius: 999px;
   font-weight: bold;
+  font-size: 15px;
   text-decoration: none;
-  transition: background-color 0.5s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .hero-btn-start:hover {
@@ -69,66 +64,61 @@
   color: var(--btn-hover-text);
 }
 
-/* Responsive: ajustes para pantallas medianas */
+/* ===================== RESPONSIVE ===================== */
 @media (max-width: 1024px) {
   .hero-section {
-    padding: 80px;
-    /* Reduce el padding general */
-    gap: 32px;
-    /* Agrega espacio entre los elementos */
+    padding: 4rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
   }
 
   .hero-content .description {
-    font-size: 28px;
-    /* Reduce el tamaño del texto */
+    font-size: 1.75rem;
   }
 
   .hero-image img {
-    width: 350px;
-    /* Ajusta el tamaño máximo de la imagen */
+    max-width: 320px;
   }
 }
 
-/* Responsive: ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
   .hero-section {
-    flex-direction: column;
+    padding: 3rem 1.5rem;
   }
 
   .hero-content .name-p {
     font-size: 12px;
-    /* Reduce el tamaño del subtítulo */
   }
 
   .hero-content .description {
-    font-size: 24px;
-    /* Reduce el tamaño del texto principal */
+    font-size: 1.5rem;
     line-height: 1.3;
-    /* Ajusta el interlineado */
   }
 
   .hero-btn-start {
-    padding: 8px 16px;
-    /* Ajusta el tamaño del botón */
+    padding: 10px 20px;
     font-size: 14px;
-    /* Reduce el tamaño del texto del botón */
-  }
-
-}
-
-@media (max-width: 375px){
-  .hero-section {
-    padding: 40px 20px;
-    /* Reduce el padding general */
-  }
-
-  .hero-content .description {
-    font-size: 20px;
-    /* Reduce el tamaño del texto */
   }
 
   .hero-image img {
-    width: 300px;
-    /* Ajusta el tamaño máximo de la imagen */
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero-section {
+    padding: 2.5rem 1.25rem;
+  }
+
+  .hero-content .description {
+    font-size: 1.25rem;
+  }
+
+  .hero-image img {
+    max-width: 240px;
   }
 }

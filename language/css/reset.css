@@ -1,57 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 /* ===================== VARIABLES GLOBALES ===================== */
 :root {
-  /* ——— Paleta de Colores ——— */
+  /* ——— Colores Extendidos ——— */
   --color-primary: #660000;
-  /* Rojo profundo (enfasis/principal) */
   --color-accent: #c1121f;
-  /* Rojo vivo secundario */
-  --color-cream: #fdf0d5;
-  /* Crema claro */
-  --color-cream-o: #e6d4c2;
-  /* Crema oscuro */
+
+  --color-primary-dark: #400000;
+  --color-primary-light: #993333;
+  --color-accent-light: #f28482;
+
+  --color-neutral: #444444;
+  --color-muted: #999999;
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --success: #4caf50;
+  --warning: #ffc107;
+  --danger: #e53935;
 
   /* ——— Fondos ——— */
   --bg-base: #1a1a1a;
-  /* Fondo principal en modo oscuro */
   --bg-section: #151515;
-  /* Secciones oscuras complementarias */
   --bg-card: #222222;
-  /* Tarjetas y bloques */
   --bg-muted: rgba(255, 255, 255, 0.05);
-  /* Sutil overlay */
-  --bg-light: #e7e7e7;
-  /* Fondo claro para elementos específicos */
+  --bg-light: #fdf0d5;
 
-  /* ——— Textos ——— */
-  --text-primary: var(--color-cream);
-  /* Texto normal claro */
-  --text-inverse: var(--color-cream-o);
-  /* Texto oscuro sobre fondos claros */
-  --text-muted: #000000;
+  /* ——— Texto ——— */
+  --text-primary: #fdf0d5;
+  --text-inverse: #1a1a1a;
+  --text-muted: #afafaf;
 
   /* ——— Botones ——— */
-  --bg-btn-l: var(--color-cream);
-  --btn-text-l: var(--color-accent);
+  --btn-bg: var(--color-primary);
+  --btn-text: var(--color-white);
   --btn-hover-bg: var(--color-accent);
-  --btn-hover-text: var(--color-cream);
+  --btn-hover-text: var(--color-white);
 
-  --bg-btn-o: var(--bg-card );
-  --btn-text-o: var(--color-accent);
-
-  /* ——— Bordes y sombras ——— */
-  --border: var(--color-primary);
-  --shadow-soft: 0px 2px 8px rgba(0, 0, 0, 0.7);
-  --shadow-strong: 0px 8px 16px rgba(0, 0, 0, 0.8);
-
-  /* ——— Header & Menú ——— */
-  --header-bg: var(--bg-section);
-  --header-shadow: rgba(0, 0, 0, 0.9);
+  /* ——— Sombra y Bordes ——— */
+  --border-radius: 8px;
+  --shadow-soft: 0 4px 8px rgba(0, 0, 0, 0.3);
+  --shadow-strong: 0 8px 16px rgba(0, 0, 0, 0.5);
 
   /* ——— Gradientes ——— */
-  --gradient-primary: linear-gradient(135deg,
-      var(--color-primary) 10%,
-      var(--color-accent) 100%);
+  --gradient-primary: linear-gradient(135deg, #660000 10%, #c1121f 100%);
 }
+
 
 /* ===================== RESET ===================== */
 *,
@@ -62,15 +56,26 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: sans-serif;
-  line-height: 1.6;
-  background: var(--gradient-primary);
-  color: var(--text-primary);
+html {
+  scroll-behavior: smooth;
 }
 
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  background: var(--bg-base);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+
+/* ===================== ELEMENTOS BASE ===================== */
 .container-general {
-  background-color: var(--bg-base);
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.container-section {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -81,17 +86,24 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: normal;
+  color: var(--text-primary);
+  font-weight: 600;
+  line-height: 1.2;
 }
 
-ul,
-ol {
-  list-style: none;
+p {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
 }
 
 a {
+  color: var(--color-accent);
   text-decoration: none;
-  color: inherit;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--color-primary-light);
 }
 
 img {
@@ -99,21 +111,105 @@ img {
   height: auto;
 }
 
-table {
-  border-collapse: collapse;
-}
-
 button {
-  background: none;
-  border: none;
-  cursor: pointer;
+  font: inherit;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--border-radius);
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  transition: all 0.3s;
+  box-shadow: var(--shadow-soft);
 }
 
+button:hover {
+  background-color: var(--btn-hover-bg);
+  color: var(--btn-hover-text);
+}
+
+
+/* ===================== FORMULARIOS ===================== */
 input,
-textarea {
-  border: none;
-  outline: none;
-  background: transparent;
-  font-family: inherit;
-  font-size: inherit;
+textarea,
+select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: var(--border-radius);
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+  border: 1px solid var(--color-primary-dark);
+  margin-bottom: 1rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-muted);
+}
+
+
+/* ===================== UTILIDADES ===================== */
+.text-center {
+  text-align: center;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: var(--bg-card);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-soft);
+  padding: 1.5rem;
+  color: var(--text-primary);
+}
+
+
+/* ===================== COMPONENTE TIMELINE ===================== */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+  border-left: 3px solid var(--color-accent);
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background: var(--color-accent);
+}
+
+.timeline-item {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1.1rem;
+  background: var(--color-accent-light);
+  border: 3px solid var(--color-accent);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.timeline-content {
+  padding-left: 1rem;
 }

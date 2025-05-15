@@ -1,11 +1,11 @@
 .proyects-section {
-    padding: 50px 40px;
+    padding: 3.5rem 2.5rem;
 }
 
 .proyects-section h2 {
-    font-size: 40px;
+    font-size: clamp(2rem, 5vw, 2.5rem);
     font-weight: 700;
-    margin-bottom: 50px;
+    margin-bottom: 3rem;
     color: var(--text-primary);
     text-align: center;
 }
@@ -18,112 +18,111 @@
 
 .proyects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 3rem;
 }
 
 .proyect-item {
     background-color: var(--bg-card);
-    color: var(--text-inverse);
-    padding: 32px;
-    border-radius: 20px;
+    color: var(--text-primary);
+    padding: 2rem;
+    border-radius: 1.25rem;
     box-shadow: var(--shadow-strong);
-    transition: transform 0.3s ease, box-shadow 0.3s ease,
-    background-color 0.5s ease;
+    transition: all 0.3s ease;
 }
 
 .proyect-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.8);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
     background-color: var(--btn-hover-bg);
     cursor: default;
 }
 
 .proyect-item img {
-    border-radius: 20px;
+    border-radius: 1rem;
     width: 100%;
     height: auto;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 3px solid var(--color-accent);
+    object-fit: cover;
+    border: 3px solid var(--color-black);
     transition: border 0.3s ease;
-}
-
-.proyect-item img:hover {
-    border: 3px solid var(--color-primary);
 }
 
 .proyect-item h3 {
     text-align: center;
-    padding-top: 20px;
-    font-size: 20px;
+    padding-top: 1.25rem;
+    font-size: 1.25rem;
     font-weight: 700;
     color: var(--text-primary);
-}
-
-.tecnologies-used {
-    font-size: 15px;
-    font-weight: 700;
-    margin: 7px;
-    color: var(--text-primary);
-}
-
-.tecnologies-used a {
-    background-color: var(--color-accent);
-    margin-right: 5px;
-    border:  var(--color-accent);
-    border-radius: 100px;
-    padding: 5px 10px;
-    transition: all 0.3s ease;
-}
-
-.tecnologies-used a:hover {
-   background-color: var(--color-primary);
-}
-
-.tecnologies-used .html{
-    background-color: #244b00;
-}
-
-.tecnologies-used .css{
-    background-color: #00274b;
-}
-
-.tecnologies-used .js{
-    background-color: #dbf300;
-    color: var(--text-muted);
-}
-
-.tecnologies-used .js:hover{
-    color: var(--text-primary);
-}
-
-.tecnologies-used .python{
-    background-color: #07004b;
 }
 
 .proyect-item p {
-    font-size: 15px;
-    line-height: 24px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+    margin-top: 1rem;
+}
+
+/* ===================== Tecnologías usadas ===================== */
+.tecnologies-used {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 1rem 0 0.5rem;
+    color: var(--text-primary);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tecnologies-used div {
+    padding: 4px 12px;
+    border-radius: 999px;
+    background-color: var(--color-accent);
+    border: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tecnologies-used a:hover {
+    background-color: var(--color-primary);
+}
+
+.tecnologies-used .html {
+    background-color: #244b00;
+}
+
+.tecnologies-used .css {
+    background-color: #00274b;
+}
+
+.tecnologies-used .js {
+    background-color: #dbf300;
     color: var(--text-inverse);
 }
 
-/* ===================== BOTONES ===================== */
+.tecnologies-used .python {
+    background-color: #07004b;
+}
+
+.tecnologies-used .illustrator {
+    background-color: #470000;
+}
+
+/* ===================== BOTÓN ===================== */
 .proyects-btn-start {
     background-color: var(--bg-card);
-    color: var(--text-inverse);
-    display: flex;
+    color: var(--text-primary);
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    padding: 10px 20px;
+    margin: 2rem auto 0;
+    padding: 10px 24px;
     font-weight: bold;
     text-decoration: none;
     border-radius: 20px;
     box-shadow: var(--shadow-strong);
-    transition: background-color 0.5s ease;
+    transition: all 0.3s ease;
 }
 
 .proyects-btn-start:hover {
@@ -132,36 +131,40 @@
     cursor: pointer;
 }
 
-/* Responsive: ajustes para pantallas medianas */
+/* ===================== Responsive ===================== */
 @media (max-width: 1024px) {
     .proyects-section {
-        padding: 50px 20px;
+        padding: 3rem 1.5rem;
     }
 
     .proyects-section h2 {
-        font-size: 30px;
-        margin-bottom: 30px;
+        font-size: 1.875rem;
+        margin-bottom: 2rem;
     }
 
-    proyect-item p {
-        font-size: 14px;
-        line-height: 22px;
+    .proyect-item p {
+        font-size: 0.9rem;
+        line-height: 1.5;
     }
 }
 
-/* Responsive: ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
-    .benefits-section {
-        padding: 30px 20px;
+    .proyects-section {
+        padding: 2rem 1rem;
     }
 
-    .benefits-section h2 {
-        font-size: 28px;
-        margin-bottom: 20px;
+    .proyects-section h2 {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
     }
 
-    .benefit-item p {
-        font-size: 13px;
-        line-height: 20px;
+    .proyect-item p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+
+    .proyects-btn-start {
+        font-size: 14px;
+        padding: 8px 18px;
     }
 }

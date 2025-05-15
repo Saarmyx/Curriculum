@@ -3,47 +3,49 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 32px;
-    box-shadow: 0px 4px 8px var(--header-shadow);
+    padding: 1rem 2rem;
     background-color: var(--bg-card);
+    box-shadow: var(--shadow-strong);
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
 .header-logo img {
-    width: 80px;
-    height: 80px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
     object-fit: cover;
-    background-color: var(--color-accent);
-    border: 2px solid #000000;
-    transition: background-color 0.3s ease;
+    border: 2px solid var(--color-black);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.header-logo .img-activa {
-    background-color: var(--color-accent);
+.header-logo .logo-activo{
+    background-color: var(--color-primary);
 }
 
 .header-logo img:hover {
-    background-color: var(--color-primary);
+    background-color: var(--color-accent);
+    transform: scale(1.05);
 }
 
 .header-menu {
     display: flex;
-    gap: 35px;
-    /* Espacio entre los elementos del menú */
+    align-items: center;
+    gap: 2rem;
     flex-wrap: wrap;
 }
 
 .header-menu a {
-    padding: 10px 20px;
+    color: var(--text-primary);
+    padding: 0.5rem 1.25rem;
     border-radius: 100px;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .header-menu a:hover {
     background-color: var(--color-accent);
+    color: var(--text-inverse);
 }
 
 .header-menu .activo {
@@ -51,59 +53,45 @@
     color: var(--text-primary);
 }
 
-/* Responsive: ajustes para pantallas medianas */
+/* ===================== RESPONSIVE ===================== */
 @media (max-width: 1024px) {
     .header-section {
-        padding: 12px 24px;
-        /* Reduce el padding general */
+        padding: 0.75rem 1.5rem;
     }
 
     .header-logo img {
         width: 60px;
-        /* Reduce el tamaño del logo */
         height: 60px;
     }
 
     .header-menu {
-        gap: 20px;
-        /* Reduce el espacio entre los elementos del menú */
+        gap: 1.25rem;
     }
 
     .header-menu a {
-        padding: 8px 16px;
-        /* Reduce el tamaño de los enlaces */
         font-size: 15px;
-        /* Reduce el tamaño del texto */
+        padding: 0.5rem 1rem;
     }
-
 }
 
-/* Responsive: ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
     .header-section {
         flex-direction: row;
-        /* Mantén los elementos en una fila */
         justify-content: center;
-        /* Centra el menú horizontalmente */
-        align-items: center;
-        padding: 16px;
-        /* Ajusta el padding */
+        padding: 1rem;
     }
 
     .header-logo {
         display: none;
-        /* Oculta el logo en pantallas pequeñas */
     }
 
     .header-menu {
         flex-direction: row;
-        /* Mantén los enlaces en una fila */
-        gap: 16px;
-        /* Ajusta el espacio entre los enlaces */
+        gap: 1rem;
     }
 
     .header-menu a {
-        padding: 8px 16px;
-        /* Ajusta el tamaño de los enlaces */
+        padding: 0.5rem 1rem;
+        font-size: 14px;
     }
 }

@@ -10,7 +10,7 @@
 .error-content {
     max-width: 500px;
     background-color: var(--bg-card);
-    color: var(--text-inverse);
+    color: var(--text-muted);
     padding: 32px;
     border-radius: 20px;
     box-shadow: var(--shadow-strong);
@@ -26,7 +26,7 @@
 
 .error-btn {
     background-color: var(--bg-card);
-    color: var(--text-inverse);
+    color: var(--text-muted);
     display: flex;
     justify-content: center;
     align-items: center;

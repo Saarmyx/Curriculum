@@ -1,0 +1,112 @@
+.timeline-section {
+    padding: 60px 20px;
+}
+
+.timeline-section h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: var(--text-primary);
+    text-align: center;
+}
+
+.timeline-highlight {
+    color: var(--text-primary);
+    text-decoration: underline;
+    text-decoration-color: var(--color-accent);
+}
+
+.timeline-container {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--color-accent);
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.timeline-item .timeline-content,
+.timeline-item .timeline-image {
+    width: 45%;
+    background-color: var(--bg-card);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: var(--shadow-strong);
+    transition: 0.3s ease;
+}
+
+.timeline-item .timeline-content h3 {
+    color: var(--text-primary);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.timeline-item .timeline-content p {
+    color: var(--text-inverse);
+    font-size: 16px;
+}
+
+.info-i{
+    color: #2f5c9e;
+    transition: color .3s ease;
+}
+
+.info-i:hover{
+ color: #4c80cf;
+}
+
+.timeline-item .timeline-image img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    order: 2;
+}
+
+.timeline-item:nth-child(even) .timeline-image {
+    order: 1;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .timeline-container::before {
+        left: 8px;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .timeline-item .timeline-content,
+    .timeline-item .timeline-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .timeline-item .timeline-content {
+        order: 2;
+    }
+
+    .timeline-item .timeline-image {
+        order: 1;
+    }
+}
